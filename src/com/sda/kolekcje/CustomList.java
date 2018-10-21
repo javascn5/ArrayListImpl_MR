@@ -48,8 +48,8 @@ public class CustomList<E> {
     }
 
     public void remove(int index){
-        Object tmp[]=new Object[size];
-        for (int i=0; i<elements.length; i++){
+        Object tmp[]=new Object[size-1];
+        for (int i=0; i<size; i++){
             if(i<index){
                 tmp[i]=elements[i];
             }
@@ -58,5 +58,6 @@ public class CustomList<E> {
             }
         }
         elements=tmp;
+        size--;
     }
 }

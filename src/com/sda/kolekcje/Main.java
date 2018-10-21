@@ -29,9 +29,13 @@ public class Main {
             System.out.println(lista.get(i));
         }
 
+        System.out.println("Rozmiar: " + lista.getSize());
+
         lista.remove(4);
         for(int i=0; i < lista.getSize();i++){
             System.out.println(lista.get(i));
         }
+        System.out.println("Rozmiar: " + lista.getSize());
+
     }
 }
